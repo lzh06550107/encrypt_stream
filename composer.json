@@ -1,0 +1,33 @@
+{
+  "name": "jsq/psr7-stream-encryption",
+  "description": "For encrypting and decrypting streams of arbitrary size.",
+  "minimum-stability": "stable",
+  "keywords": ["psr","psr-7","stream","encryption"],
+  "type": "library",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "lzh",
+      "email": "liao08022040@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Jsq\\EncryptionStreams\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Jsq\\EncryptionStreams\\": "tests/"
+    }
+  },
+  "require": {
+    "php": ">=7.1",
+    "ext-openssl": "*",
+    "guzzlehttp/psr7": "~1.0",
+    "psr/http-message": "~1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.0"
+  }
+}
